@@ -1,0 +1,749 @@
+AD9959_Init start...
+  GPIO ok
+  Reset ok
+  FR1 ok
+  CFR ok
+SetFreq CH0=1000Hz
+  Freq ok
+  Amp ok
+  Sync ok
+AD9959_Init done.
+SetFreq CH0=1000Hz
+SetFreq CH1=1000Hz
+
+DDS idle: output amplitude is zero. Send 2, 4 or 5 + Enter.
+
+DDS mode commands:
+  2 + Enter           : Task 2, 100 Hz..1 MHz, amplitude command 440
+  4 freq target + Enter: Task 4, freq 100..3000 Hz, target 1.0..2.0 Vpp
+  4 X reference_mV    : set Task 4 calibration reference
+  5 + Enter           : Task 5, learn the unknown RLC model with CH1
+  Example             : 4 1000 2.0
+  Example             : 4 3000 1.3
+  Example             : 4 0300 1.9
+
+Task 2 frequency commands:
+  frequency + Enter : rounded to the nearest 100 Hz
+  + / -             : change frequency by 100 Hz
+  m                 : restore amplitude command 440
+  ?                 : show help
+
+5
+
+[Task 5] Unknown-model learning started.
+PC5=Vin, PA3=Vout, both ADC pins must be biased near 1.65 V.
+[Task 5] Reference model: RC LOW PASS
+[Task 5] Topology: CH1--R--Vout, C from Vout to GND
+[Task 5] Reference: R=1489.0 ohm, C=9.600 nF, fc=11134.1 Hz
+[Task 5] Theory: |H(fc)|=0.707, sweep=100~30000 Hz
+[Task 5] Front-end correction: OPA695 R5=56.0 ohm, R6=390.0 ohm, C9=10.0 uF
+SetFreq CH1=100Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000001 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=610 ms, NDTR=8152
+[Task 5] ADC wait: done=0 error=0 NDTR=6158 state=0x00000100
+[Task 5] ADC wait: done=0 error=0 NDTR=4158 state=0x00000100
+[Task 5] ADC wait: done=0 error=0 NDTR=2158 state=0x00000100
+[Task 5] ADC wait: done=0 error=0 NDTR=158 state=0x00000100
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=100 Hz Fs=10000 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1592 mV max=1691 mV Vpp(sample)=99 mV AC_RMS=29 mV Vpp(sine)=83 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1550 mV max=1733 mV Vpp(sample)=183 mV AC_RMS=57 mV Vpp(sine)=161 mV
+  Gain(total RMS)=1.938
+  OPA695 model gain=2.807, filter gain(corrected)=0.691
+  Raw samples Vin/ Vout (count[mV]): 2016[1625]/2062[1662] 2012[1621]/2070[1668] 2016[1625]/2077[1674] 2016[1625]/2076[1673] 2016[1625]/2084[1679] 2020[1628]/2090[1684] 2025[1632]/2099[1692] 2029[1635]/2099[1692]
+SetFreq CH1=150Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=610 ms, NDTR=8152
+[Task 5] ADC wait: done=0 error=0 NDTR=6158 state=0x00000100
+[Task 5] ADC wait: done=0 error=0 NDTR=4158 state=0x00000100
+[Task 5] ADC wait: done=0 error=0 NDTR=2158 state=0x00000100
+[Task 5] ADC wait: done=0 error=0 NDTR=158 state=0x00000100
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=150 Hz Fs=10000 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1587 mV max=1694 mV Vpp(sample)=107 mV AC_RMS=31 mV Vpp(sine)=87 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1511 mV max=1767 mV Vpp(sample)=256 mV AC_RMS=82 mV Vpp(sine)=231 mV
+  Gain(total RMS)=2.640
+  OPA695 model gain=3.821, filter gain(corrected)=0.691
+  Raw samples Vin/ Vout (count[mV]): 2074[1671]/2173[1751] 2074[1671]/2166[1745] 2080[1676]/2165[1745] 2077[1674]/2160[1741] 2083[1679]/2156[1737] 2085[1680]/2153[1735] 2088[1683]/2145[1729] 2086[1681]/2132[1718]
+SetFreq CH1=220Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=610 ms, NDTR=8152
+[Task 5] ADC wait: done=0 error=0 NDTR=6158 state=0x00000100
+[Task 5] ADC wait: done=0 error=0 NDTR=4158 state=0x00000100
+[Task 5] ADC wait: done=0 error=0 NDTR=2158 state=0x00000100
+[Task 5] ADC wait: done=0 error=0 NDTR=158 state=0x00000100
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=220 Hz Fs=10000 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1588 mV max=1696 mV Vpp(sample)=108 mV AC_RMS=32 mV Vpp(sine)=89 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1446 mV max=1806 mV Vpp(sample)=360 mV AC_RMS=111 mV Vpp(sine)=313 mV
+  Gain(total RMS)=3.498
+  OPA695 model gain=4.939, filter gain(corrected)=0.708
+  Raw samples Vin/ Vout (count[mV]): 2083[1679]/2080[1676] 2082[1678]/2052[1654] 2070[1668]/2024[1631] 2063[1662]/1997[1609] 2063[1662]/1971[1588] 2058[1658]/1949[1571] 2048[1650]/1921[1548] 2035[1640]/1902[1533]
+SetFreq CH1=330Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=588 ms, NDTR=8148
+[Task 5] ADC wait: done=0 error=0 NDTR=6044 state=0x00000100
+[Task 5] ADC wait: done=0 error=0 NDTR=3932 state=0x00000100
+[Task 5] ADC wait: done=0 error=0 NDTR=1820 state=0x00000100
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=330 Hz Fs=10560 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1588 mV max=1695 mV Vpp(sample)=107 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1428 mV max=1849 mV Vpp(sample)=421 mV AC_RMS=144 mV Vpp(sine)=407 mV
+  Gain(total RMS)=4.486
+  OPA695 model gain=6.070, filter gain(corrected)=0.739
+  Raw samples Vin/ Vout (count[mV]): 2016[1625]/2125[1712] 2027[1633]/2170[1749] 2040[1644]/2210[1781] 2053[1654]/2240[1805] 2059[1659]/2260[1821] 2067[1666]/2279[1837] 2075[1672]/2284[1841] 2086[1681]/2277[1835]
+SetFreq CH1=470Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=473 ms, NDTR=8130
+[Task 5] ADC wait: done=0 error=0 NDTR=5132 state=0x00000100
+[Task 5] ADC wait: done=0 error=0 NDTR=2124 state=0x00000100
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=470 Hz Fs=15040 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1584 mV max=1695 mV Vpp(sample)=111 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1383 mV max=1890 mV Vpp(sample)=507 mV AC_RMS=170 mV Vpp(sine)=480 mV
+  Gain(total RMS)=5.275
+  OPA695 model gain=6.835, filter gain(corrected)=0.772
+  Raw samples Vin/ Vout (count[mV]): 2006[1617]/2058[1658] 2017[1625]/2117[1706] 2041[1645]/2171[1750] 2040[1644]/2220[1789] 2056[1657]/2263[1824] 2063[1662]/2295[1849] 2073[1671]/2314[1865] 2080[1676]/2323[1872]
+SetFreq CH1=680Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=389 ms, NDTR=8102
+[Task 5] ADC wait: done=0 error=0 NDTR=3764 state=0x00000100
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=680 Hz Fs=21760 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1587 mV max=1694 mV Vpp(sample)=107 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1339 mV max=1924 mV Vpp(sample)=585 mV AC_RMS=190 mV Vpp(sine)=538 mV
+  Gain(total RMS)=5.888
+  OPA695 model gain=7.358, filter gain(corrected)=0.800
+  Raw samples Vin/ Vout (count[mV]): 2073[1671]/2069[1667] 2056[1657]/2009[1619] 2043[1646]/1946[1568] 2031[1637]/1882[1517] 2018[1626]/1828[1473] 2009[1619]/1779[1434] 1998[1610]/1738[1401] 1988[1602]/1711[1379]
+SetFreq CH1=1000Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=328 ms, NDTR=8060
+[Task 5] ADC wait: done=0 error=0 NDTR=1680 state=0x00000100
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=1000 Hz Fs=32000 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1586 mV max=1696 mV Vpp(sample)=110 mV AC_RMS=32 mV Vpp(sine)=92 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1322 mV max=1936 mV Vpp(sample)=614 mV AC_RMS=203 mV Vpp(sine)=575 mV
+  Gain(total RMS)=6.276
+  OPA695 model gain=7.666, filter gain(corrected)=0.819
+  Raw samples Vin/ Vout (count[mV]): 2056[1657]/2262[1823] 2067[1666]/2310[1862] 2073[1671]/2355[1898] 2081[1677]/2374[1913] 2089[1683]/2388[1924] 2090[1684]/2387[1924] 2090[1684]/2368[1908] 2101[1693]/2336[1882]
+SetFreq CH1=1500Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=286 ms, NDTR=7992
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=1500 Hz Fs=48000 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1585 mV max=1696 mV Vpp(sample)=111 mV AC_RMS=32 mV Vpp(sine)=92 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1326 mV max=1947 mV Vpp(sample)=621 mV AC_RMS=210 mV Vpp(sine)=594 mV
+  Gain(total RMS)=6.480
+  OPA695 model gain=7.827, filter gain(corrected)=0.828
+  Raw samples Vin/ Vout (count[mV]): 2051[1653]/2165[1745] 2060[1660]/2226[1794] 2069[1667]/2283[1840] 2076[1673]/2330[1878] 2080[1676]/2368[1908] 2085[1680]/2391[1927] 2089[1683]/2398[1932] 2089[1683]/2390[1926]
+SetFreq CH1=2200Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=259 ms, NDTR=7900
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=2200 Hz Fs=70401 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1588 mV max=1696 mV Vpp(sample)=108 mV AC_RMS=32 mV Vpp(sine)=92 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1307 mV max=1948 mV Vpp(sample)=641 mV AC_RMS=212 mV Vpp(sine)=599 mV
+  Gain(total RMS)=6.533
+  OPA695 model gain=7.900, filter gain(corrected)=0.827
+  Raw samples Vin/ Vout (count[mV]): 2040[1644]/2092[1686] 2027[1633]/2023[1630] 2016[1625]/1948[1570] 2006[1617]/1877[1513] 1998[1610]/1818[1465] 1990[1604]/1760[1418] 1981[1596]/1715[1382] 1977[1593]/1683[1356]
+SetFreq CH1=3300Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=239 ms, NDTR=7752
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=3300 Hz Fs=105587 Hz
+
+  Vin : raw mean=2033 cnt DC=1638 mV min=1588 mV max=1695 mV Vpp(sample)=107 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1333 mV max=1952 mV Vpp(sample)=619 mV AC_RMS=210 mV Vpp(sine)=594 mV
+  Gain(total RMS)=6.492
+  OPA695 model gain=7.935, filter gain(corrected)=0.818
+  Raw samples Vin/ Vout (count[mV]): 2080[1676]/2368[1908] 2073[1671]/2331[1878] 2068[1667]/2285[1841] 2059[1659]/2227[1795] 2045[1648]/2161[1741] 2035[1640]/2096[1689] 2033[1638]/2025[1632] 2011[1621]/1952[1573]
+SetFreq CH1=4700Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=228 ms, NDTR=7566
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=4700 Hz Fs=150375 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1586 mV max=1693 mV Vpp(sample)=107 mV AC_RMS=32 mV Vpp(sine)=92 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1343 mV max=1938 mV Vpp(sample)=595 mV AC_RMS=204 mV Vpp(sine)=577 mV
+  Gain(total RMS)=6.295
+  OPA695 model gain=7.950, filter gain(corrected)=0.792
+  Raw samples Vin/ Vout (count[mV]): 1985[1600]/1779[1434] 1981[1596]/1737[1400] 1979[1595]/1700[1370] 1976[1592]/1684[1357] 1979[1595]/1670[1346] 1980[1596]/1677[1351] 1984[1599]/1696[1367] 1993[1606]/1728[1393]
+SetFreq CH1=6800Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=219 ms, NDTR=7286
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=6800 Hz Fs=217588 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1584 mV max=1694 mV Vpp(sample)=110 mV AC_RMS=32 mV Vpp(sine)=92 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1359 mV max=1922 mV Vpp(sample)=563 mV AC_RMS=192 mV Vpp(sine)=542 mV
+  Gain(total RMS)=5.917
+  OPA695 model gain=7.957, filter gain(corrected)=0.744
+  Raw samples Vin/ Vout (count[mV]): 1979[1595]/1699[1369] 1988[1602]/1705[1374] 1994[1607]/1733[1397] 2004[1615]/1770[1426] 2016[1625]/1814[1462] 2024[1631]/1867[1505] 2037[1642]/1927[1553] 2050[1652]/1991[1604]
+SetFreq CH1=8000Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=217 ms, NDTR=7126
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=8000 Hz Fs=255863 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1587 mV max=1696 mV Vpp(sample)=109 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1370 mV max=1912 mV Vpp(sample)=542 mV AC_RMS=184 mV Vpp(sine)=520 mV
+  Gain(total RMS)=5.708
+  OPA695 model gain=7.959, filter gain(corrected)=0.717
+  Raw samples Vin/ Vout (count[mV]): 1999[1611]/1745[1406] 2008[1618]/1782[1436] 2018[1626]/1826[1472] 2028[1634]/1881[1516] 2039[1643]/1945[1567] 2055[1656]/2001[1613] 2063[1662]/2063[1662] 2070[1668]/2126[1713]
+SetFreq CH1=9000Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=215 ms, NDTR=6992
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=9000 Hz Fs=288115 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1588 mV max=1699 mV Vpp(sample)=111 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1368 mV max=1901 mV Vpp(sample)=533 mV AC_RMS=177 mV Vpp(sine)=502 mV
+  Gain(total RMS)=5.512
+  OPA695 model gain=7.960, filter gain(corrected)=0.692
+  Raw samples Vin/ Vout (count[mV]): 1978[1594]/1729[1393] 1977[1593]/1718[1384] 1986[1600]/1719[1385] 1992[1605]/1734[1397] 1999[1611]/1757[1416] 2009[1619]/1807[1456] 2019[1627]/1839[1482] 2042[1646]/1881[1516]
+SetFreq CH1=10000Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=213 ms, NDTR=6859
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=10000 Hz Fs=320000 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1585 mV max=1695 mV Vpp(sample)=110 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1381 mV max=1891 mV Vpp(sample)=510 mV AC_RMS=171 mV Vpp(sine)=483 mV
+  Gain(total RMS)=5.321
+  OPA695 model gain=7.961, filter gain(corrected)=0.668
+  Raw samples Vin/ Vout (count[mV]): 2069[1667]/2317[1867] 2063[1662]/2297[1851] 2051[1653]/2264[1824] 2041[1645]/2224[1792] 2027[1633]/2176[1754] 2017[1625]/2124[1712] 2006[1617]/2066[1665] 1997[1609]/2010[1620]
+SetFreq CH1=10500Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=213 ms, NDTR=7492
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=10500 Hz Fs=336134 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1586 mV max=1696 mV Vpp(sample)=110 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1389 mV max=1890 mV Vpp(sample)=501 mV AC_RMS=168 mV Vpp(sine)=474 mV
+  Gain(total RMS)=5.205
+  OPA695 model gain=7.961, filter gain(corrected)=0.654
+  Raw samples Vin/ Vout (count[mV]): 1986[1600]/1737[1400] 2001[1613]/1765[1422] 2022[1629]/1830[1475] 2044[1647]/1928[1554] 2065[1664]/2041[1645] 2080[1676]/2152[1734] 2084[1679]/2246[1810] 2091[1685]/2309[1861]
+SetFreq CH1=11000Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=212 ms, NDTR=7458
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=11000 Hz Fs=351906 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1587 mV max=1697 mV Vpp(sample)=110 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1398 mV max=1882 mV Vpp(sample)=484 mV AC_RMS=164 mV Vpp(sine)=465 mV
+  Gain(total RMS)=5.099
+  OPA695 model gain=7.962, filter gain(corrected)=0.640
+  Raw samples Vin/ Vout (count[mV]): 2023[1630]/2156[1737] 2004[1615]/2028[1634] 1994[1607]/1915[1543] 1979[1595]/1824[1470] 1978[1594]/1762[1420] 1985[1600]/1747[1408] 1999[1611]/1764[1422] 2020[1628]/1824[1470]
+SetFreq CH1=11100Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=212 ms, NDTR=7452
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=11100 Hz Fs=355029 Hz
+  Vin : raw mean=2032 cnt DC=1638 mV min=1584 mV max=1696 mV Vpp(sample)=112 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1383 mV max=1882 mV Vpp(sample)=499 mV AC_RMS=164 mV Vpp(sine)=463 mV
+  Gain(total RMS)=5.095
+  OPA695 model gain=7.962, filter gain(corrected)=0.640
+  Raw samples Vin/ Vout (count[mV]): 2002[1613]/2036[1641] 1986[1600]/1927[1553] 1976[1592]/1834[1478] 1981[1596]/1761[1419] 1984[1599]/1742[1404] 1999[1611]/1762[1420] 2020[1628]/1824[1470] 2042[1646]/1920[1547]
+SetFreq CH1=11200Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=212 ms, NDTR=7446
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=11200 Hz Fs=358208 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1587 mV max=1696 mV Vpp(sample)=109 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1393 mV max=1882 mV Vpp(sample)=489 mV AC_RMS=163 mV Vpp(sine)=461 mV
+  Gain(total RMS)=5.067
+  OPA695 model gain=7.962, filter gain(corrected)=0.636
+  Raw samples Vin/ Vout (count[mV]): 1984[1599]/1898[1530] 1973[1590]/1809[1458] 1974[1591]/1755[1414] 1984[1599]/1742[1404] 1995[1608]/1790[1442] 2019[1627]/1839[1482] 2045[1648]/1937[1561] 2062[1662]/2049[1651]
+SetFreq CH1=11500Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=212 ms, NDTR=7425
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=11500 Hz Fs=368098 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1587 mV max=1696 mV Vpp(sample)=109 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1400 mV max=1879 mV Vpp(sample)=479 mV AC_RMS=161 mV Vpp(sine)=456 mV
+  Gain(total RMS)=5.010
+  OPA695 model gain=7.962, filter gain(corrected)=0.629
+  Raw samples Vin/ Vout (count[mV]): 2010[1620]/1794[1446] 2032[1638]/1869[1506] 2056[1657]/1967[1585] 2075[1672]/2077[1674] 2084[1679]/2182[1758] 2092[1686]/2264[1824] 2089[1683]/2304[1857] 2072[1670]/2307[1859]
+SetFreq CH1=12000Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=211 ms, NDTR=7392
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=12000 Hz Fs=384000 Hz
+  Vin : raw mean=2032 cnt DC=1638 mV min=1585 mV max=1694 mV Vpp(sample)=109 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1395 mV max=1870 mV Vpp(sample)=475 mV AC_RMS=158 mV Vpp(sine)=447 mV
+  Gain(total RMS)=4.912
+  OPA695 model gain=7.962, filter gain(corrected)=0.617
+  Raw samples Vin/ Vout (count[mV]): 1977[1593]/1889[1522] 1971[1588]/1808[1457] 1975[1592]/1760[1418] 1989[1603]/1749[1409] 2002[1613]/1786[1439] 2031[1637]/1862[1501] 2051[1653]/1958[1578] 2070[1668]/2065[1664]
+SetFreq CH1=12500Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=211 ms, NDTR=7358
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=12500 Hz Fs=400000 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1585 mV max=1696 mV Vpp(sample)=111 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1400 mV max=1867 mV Vpp(sample)=467 mV AC_RMS=155 mV Vpp(sine)=438 mV
+  Gain(total RMS)=4.827
+  OPA695 model gain=7.962, filter gain(corrected)=0.606
+  Raw samples Vin/ Vout (count[mV]): 2000[1612]/1769[1426] 2018[1626]/1811[1459] 2038[1642]/1891[1524] 2060[1660]/1992[1605] 2074[1671]/2097[1690] 2086[1681]/2198[1771] 2090[1684]/2261[1822] 2096[1689]/2296[1850]
+SetFreq CH1=13000Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=210 ms, NDTR=7325
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=13000 Hz Fs=415944 Hz
+  Vin : raw mean=2032 cnt DC=1638 mV min=1585 mV max=1696 mV Vpp(sample)=111 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1413 mV max=1864 mV Vpp(sample)=451 mV AC_RMS=152 mV Vpp(sine)=430 mV
+  Gain(total RMS)=4.736
+  OPA695 model gain=7.962, filter gain(corrected)=0.595
+  Raw samples Vin/ Vout (count[mV]): 2021[1629]/2154[1736] 2000[1612]/2054[1655] 1981[1596]/1952[1573] 1977[1593]/1860[1499] 1973[1590]/1792[1444] 1984[1599]/1763[1421] 1995[1608]/1776[1431] 2016[1625]/1824[1470]
+SetFreq CH1=13500Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=210 ms, NDTR=7292
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=13500 Hz Fs=431654 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1588 mV max=1694 mV Vpp(sample)=106 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1412 mV max=1862 mV Vpp(sample)=450 mV AC_RMS=149 mV Vpp(sine)=421 mV
+  Gain(total RMS)=4.639
+  OPA695 model gain=7.963, filter gain(corrected)=0.583
+  Raw samples Vin/ Vout (count[mV]): 2054[1655]/1948[1570] 2071[1669]/2051[1653] 2084[1679]/2148[1731] 2090[1684]/2226[1794] 2086[1681]/2276[1834] 2076[1673]/2291[1846] 2060[1660]/2263[1824] 2038[1642]/2208[1779]
+SetFreq CH1=14000Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=210 ms, NDTR=7259
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=14000 Hz Fs=447761 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1585 mV max=1696 mV Vpp(sample)=111 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1414 mV max=1858 mV Vpp(sample)=444 mV AC_RMS=146 mV Vpp(sine)=414 mV
+  Gain(total RMS)=4.553
+  OPA695 model gain=7.963, filter gain(corrected)=0.572
+  Raw samples Vin/ Vout (count[mV]): 2057[1658]/2253[1816] 2035[1640]/2187[1762] 2010[1620]/2096[1689] 1994[1607]/1995[1608] 1984[1599]/1901[1532] 1992[1605]/1824[1470] 1984[1599]/1782[1436] 1995[1608]/1777[1432]
+SetFreq CH1=14500Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=209 ms, NDTR=7224
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=14500 Hz Fs=464216 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1587 mV max=1696 mV Vpp(sample)=109 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1425 mV max=1851 mV Vpp(sample)=426 mV AC_RMS=143 mV Vpp(sine)=405 mV
+  Gain(total RMS)=4.462
+  OPA695 model gain=7.963, filter gain(corrected)=0.560
+  Raw samples Vin/ Vout (count[mV]): 1988[1602]/1932[1557] 1982[1597]/1853[1493] 1980[1596]/1798[1449] 1993[1606]/1779[1434] 2009[1619]/1800[1451] 2030[1636]/1856[1496] 2055[1656]/1936[1560] 2071[1669]/2036[1641]
+SetFreq CH1=15000Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=209 ms, NDTR=7192
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=15000 Hz Fs=480000 Hz
+  Vin : raw mean=2032 cnt DC=1638 mV min=1586 mV max=1695 mV Vpp(sample)=109 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1402 mV max=1848 mV Vpp(sample)=446 mV AC_RMS=141 mV Vpp(sine)=398 mV
+  Gain(total RMS)=4.366
+  OPA695 model gain=7.963, filter gain(corrected)=0.548
+  Raw samples Vin/ Vout (count[mV]): 1979[1595]/1864[1502] 1979[1595]/1806[1455] 1988[1602]/1785[1438] 2005[1616]/1807[1456] 2026[1633]/1851[1492] 2051[1653]/1925[1551] 2071[1669]/2012[1621] 2083[1679]/2114[1704]
+SetFreq CH1=16000Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=209 ms, NDTR=7150
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=16000 Hz Fs=500000 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1588 mV max=1693 mV Vpp(sample)=105 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1439 mV max=1842 mV Vpp(sample)=403 mV AC_RMS=135 mV Vpp(sine)=383 mV
+  Gain(total RMS)=4.212
+  OPA695 model gain=7.963, filter gain(corrected)=0.529
+  Raw samples Vin/ Vout (count[mV]): 2065[1664]/2263[1824] 2044[1647]/2225[1793] 2024[1631]/2154[1736] 1998[1610]/2067[1666] 1990[1604]/1969[1587] 1976[1592]/1892[1525] 1987[1601]/1819[1466] 1984[1599]/1795[1447]
+SetFreq CH1=17000Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=209 ms, NDTR=7150
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=17000 Hz Fs=500000 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1588 mV max=1695 mV Vpp(sample)=107 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1444 mV max=1835 mV Vpp(sample)=391 mV AC_RMS=130 mV Vpp(sine)=368 mV
+  Gain(total RMS)=4.055
+  OPA695 model gain=7.963, filter gain(corrected)=0.509
+  Raw samples Vin/ Vout (count[mV]): 1972[1589]/1864[1502] 1977[1593]/1813[1461] 1991[1604]/1798[1449] 2010[1620]/1826[1472] 2036[1641]/1890[1523] 2057[1658]/1981[1596] 2075[1672]/2080[1676] 2085[1680]/2166[1745]
+SetFreq CH1=18000Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=209 ms, NDTR=7150
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=18000 Hz Fs=500000 Hz
+  Vin : raw mean=2032 cnt DC=1638 mV min=1585 mV max=1696 mV Vpp(sample)=111 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1427 mV max=1836 mV Vpp(sample)=409 mV AC_RMS=125 mV Vpp(sine)=355 mV
+  Gain(total RMS)=3.908
+  OPA695 model gain=7.963, filter gain(corrected)=0.491
+  Raw samples Vin/ Vout (count[mV]): 2063[1662]/1995[1608] 2081[1677]/2093[1687] 2087[1682]/2177[1754] 2085[1680]/2237[1803] 2072[1670]/2254[1816] 2051[1653]/2236[1802] 2028[1634]/2157[1738] 2003[1614]/2063[1662]
+SetFreq CH1=19000Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=209 ms, NDTR=7150
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=19000 Hz Fs=500000 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1587 mV max=1696 mV Vpp(sample)=109 mV AC_RMS=32 mV Vpp(sine)=91 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1451 mV max=1822 mV Vpp(sample)=371 mV AC_RMS=121 mV Vpp(sine)=342 mV
+  Gain(total RMS)=3.781
+  OPA695 model gain=7.963, filter gain(corrected)=0.475
+  Raw samples Vin/ Vout (count[mV]): 2053[1654]/2221[1790] 2024[1631]/2158[1739] 1999[1611]/2066[1665] 1984[1599]/1968[1586] 1977[1593]/1879[1514] 1984[1599]/1828[1473] 1998[1610]/1800[1451] 2023[1630]/1863[1501]
+SetFreq CH1=20000Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=209 ms, NDTR=7150
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=20000 Hz Fs=500000 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1586 mV max=1696 mV Vpp(sample)=110 mV AC_RMS=32 mV Vpp(sine)=90 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1463 mV max=1812 mV Vpp(sample)=349 mV AC_RMS=117 mV Vpp(sine)=330 mV
+  Gain(total RMS)=3.645
+  OPA695 model gain=7.963, filter gain(corrected)=0.458
+  Raw samples Vin/ Vout (count[mV]): 1979[1595]/1852[1492] 1991[1604]/1824[1470] 2016[1625]/1847[1488] 2043[1646]/1920[1547] 2070[1668]/2016[1625] 2085[1680]/2114[1704] 2088[1683]/2195[1769] 2080[1676]/2233[1799]
+SetFreq CH1=21000Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=209 ms, NDTR=7150
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=21000 Hz Fs=500000 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1587 mV max=1693 mV Vpp(sample)=106 mV AC_RMS=32 mV Vpp(sine)=90 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1470 mV max=1816 mV Vpp(sample)=346 mV AC_RMS=113 mV Vpp(sine)=319 mV
+  Gain(total RMS)=3.527
+  OPA695 model gain=7.964, filter gain(corrected)=0.443
+  Raw samples Vin/ Vout (count[mV]): 2077[1674]/2057[1658] 2089[1683]/2152[1734] 2085[1680]/2215[1785] 2068[1667]/2227[1795] 2040[1644]/2183[1759] 2012[1621]/2102[1694] 1987[1601]/2000[1612] 1976[1592]/1906[1536]
+SetFreq CH1=22000Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=209 ms, NDTR=7150
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=22000 Hz Fs=500000 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1586 mV max=1695 mV Vpp(sample)=109 mV AC_RMS=32 mV Vpp(sine)=90 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1472 mV max=1805 mV Vpp(sample)=333 mV AC_RMS=109 mV Vpp(sine)=308 mV
+  Gain(total RMS)=3.402
+  OPA695 model gain=7.964, filter gain(corrected)=0.427
+  Raw samples Vin/ Vout (count[mV]): 2029[1635]/2166[1745] 2004[1615]/2080[1676] 1984[1599]/1960[1579] 1977[1593]/1879[1514] 1990[1604]/1840[1483] 2016[1625]/1858[1497] 2044[1647]/1930[1555] 2070[1668]/2024[1631]
+SetFreq CH1=24000Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=209 ms, NDTR=7150
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=24000 Hz Fs=500000 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1587 mV max=1695 mV Vpp(sample)=108 mV AC_RMS=32 mV Vpp(sine)=90 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1484 mV max=1794 mV Vpp(sample)=310 mV AC_RMS=102 mV Vpp(sine)=288 mV
+  Gain(total RMS)=3.187
+  OPA695 model gain=7.964, filter gain(corrected)=0.400
+  Raw samples Vin/ Vout (count[mV]): 2084[1679]/2108[1699] 2086[1681]/2186[1762] 2068[1667]/2208[1779] 2037[1642]/2172[1750] 2006[1617]/2083[1679] 1984[1599]/1974[1591] 1979[1595]/1888[1521] 1993[1606]/1852[1492]
+SetFreq CH1=26000Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=209 ms, NDTR=7150
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=26000 Hz Fs=500000 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1587 mV max=1696 mV Vpp(sample)=109 mV AC_RMS=32 mV Vpp(sine)=90 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1496 mV max=1790 mV Vpp(sample)=294 mV AC_RMS=96 mV Vpp(sine)=271 mV
+  Gain(total RMS)=2.998
+  OPA695 model gain=7.964, filter gain(corrected)=0.376
+  Raw samples Vin/ Vout (count[mV]): 1998[1610]/1863[1501] 2033[1638]/1907[1537] 2066[1665]/2001[1613] 2088[1683]/2108[1699] 2084[1679]/2183[1759] 2061[1661]/2194[1768] 2024[1631]/2139[1724] 1993[1606]/2038[1642]
+SetFreq CH1=28000Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=209 ms, NDTR=7150
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=28000 Hz Fs=500000 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1587 mV max=1692 mV Vpp(sample)=105 mV AC_RMS=32 mV Vpp(sine)=90 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1493 mV max=1777 mV Vpp(sample)=284 mV AC_RMS=90 mV Vpp(sine)=255 mV
+  Gain(total RMS)=2.823
+  OPA695 model gain=7.964, filter gain(corrected)=0.355
+  Raw samples Vin/ Vout (count[mV]): 1979[1595]/1920[1547] 2000[1612]/1870[1507] 2027[1633]/1924[1550] 2071[1669]/2008[1618] 2090[1684]/2112[1702] 2083[1679]/2180[1757] 2055[1656]/2178[1755] 2016[1625]/2104[1696]
+SetFreq CH1=30000Hz
+[Task 5] ADC prepare...
+[Task 5] ADC stop status=0 state=0x00000201 error=0x00000000
+[Task 5] ADC DMA start...
+[Task 5] ADC DMA status=0 state=0x00000100 error=0x00000000
+[Task 5] TIM2 start...
+[Task 5] TIM2 status=0
+[Task 5] Waiting DMA: timeout=209 ms, NDTR=7150
+[Task 5] DMA NDTR reached zero; using polling completion.
+[Task 5] DMA complete: done=1 NDTR=0
+[Task 5] ADC and TIM2 stopped; invalidate DMA buffer...
+[Task 5] DMA buffer ready.
+[Task 5] f=30000 Hz Fs=500000 Hz
+  Vin : raw mean=2033 cnt DC=1638 mV min=1588 mV max=1696 mV Vpp(sample)=108 mV AC_RMS=32 mV Vpp(sine)=90 mV
+  Vout: raw mean=2030 cnt DC=1636 mV min=1486 mV max=1771 mV Vpp(sample)=285 mV AC_RMS=85 mV Vpp(sine)=240 mV
+  Gain(total RMS)=2.668
+  OPA695 model gain=7.964, filter gain(corrected)=0.335
+  Raw samples Vin/ Vout (count[mV]): 2000[1612]/2013[1622] 1984[1599]/1917[1545] 2001[1613]/1884[1518] 2040[1644]/1930[1555] 2075[1672]/2034[1639] 2090[1684]/2135[1721] 2075[1672]/2180[1757] 2037[1642]/2145[1729]
+[Task 5] Full classification sweep: 100~30000 Hz, 38 points.
+
+[Task 5] Filter type: LOW PASS
+[Task 5] Learning finished; CH1 output is now disabled.
